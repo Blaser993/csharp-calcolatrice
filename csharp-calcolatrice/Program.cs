@@ -20,8 +20,8 @@ Massimo tra due numeri double
 */
 
 int num = -567;
-int primo = 43;
-int secondo = -42;
+int primo = 2;
+int secondo = -2;
 
 double terzo = 34.6;
 double quarto = 34.5;
@@ -32,3 +32,16 @@ Console.WriteLine(resultInt);
 
 double resultDec = CalcoliHelper.MaxDec(terzo, quarto);
 Console.WriteLine(resultDec);
+
+/*
+BONUS:
+Aggiungete il metodo per l’elevamento a potenza che prende come 
+parametri due numeri interi (base ed esponente) e ritorna la base elevata all’esponente.
+Occhio che sia la base che l’esponente potrebbero essere uguali a zero oppure numeri negativi!
+(caso esponente = 0 e base = 0 anche se in matematica sarebbe un numero indefinito usiamo 
+l’approccio informatico che lo calcola come 1)
+*/
+
+
+float potenzatInt = CalcoliHelper.PotenzaInt(primo, secondo);
+Console.WriteLine(potenzatInt);

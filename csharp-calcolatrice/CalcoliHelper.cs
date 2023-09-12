@@ -140,5 +140,39 @@ namespace csharp_calcolatrice
 
         }
 
+        public static float PotenzaInt(int numBase, int esponente)
+        {
+
+            if (esponente == 0 && numBase == 0)
+            {
+                return 1;
+            }
+
+            if (esponente < 0)
+            {
+                int absEsponente = ValAssolutoInt(esponente);
+                float esponenziale2 = numBase;
+                for (int i = 1; i < absEsponente; i++)
+                {
+                    esponenziale2 = esponenziale2 * numBase;
+                }
+                return 1/esponenziale2;
+            }
+
+            int esponenziale = numBase;
+
+            for (int i = 1; i<esponente; i++)
+            {
+                esponenziale = esponenziale * numBase;   
+            }
+  
+            
+            if (numBase < 0 && esponente % 2 != 0)
+            {
+                esponenziale = esponenziale * -1;
+            }
+
+            return esponenziale;
+        }
     }
 }
