@@ -20,18 +20,17 @@ Massimo tra due numeri double
 */
 
 int num = -567;
-int primo = 2;
+float primo = -2;
 int secondo = -2;
 
 double terzo = 34.6;
 double quarto = 34.5;
 
 
-int resultInt = CalcoliHelper.MaxInt(primo,secondo);
-Console.WriteLine(resultInt);
 
-double resultDec = CalcoliHelper.MaxDec(terzo, quarto);
-Console.WriteLine(resultDec);
+
+
+
 
 /*
 BONUS:
